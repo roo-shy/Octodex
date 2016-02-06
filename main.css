@@ -1,0 +1,95 @@
+
+.octodex{
+    margin-top:21px;
+    display: flex;
+    flex-direction: row;
+}
+
+.octocat{
+   border-bottom: 1px solid #CACACA;
+   width: 445px;
+   margin: 0 0 30px 25px;
+
+
+}
+
+.octocat > a > img {
+   width: 445px;
+   border: solid 1px #CACACA;
+   border-radius: 5px;
+}
+
+
+.image-number {
+  color: #CDCCCB;
+  font-weight: bold;
+  margin-top: 3px;
+  float:left;
+}
+
+.image-number::before {
+  content: "#";
+}
+
+.image-caption{
+  color: #777777;
+  font-weight: bold;
+  font-size:15px;
+  display:inline-block;
+}
+
+.image-caption a{
+  font-weight: bold;
+  font-size:15px;
+  color: #33343B;
+  text-decoration: none;
+}
+
+.authors li > a > img{
+  width: 29px;
+  width: 29px;
+  border-radius: 5px;
+}
+
+
+ul{
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  display:inline-block;
+  justify-content: center;
+
+}
+
+li {
+  list-style: none;
+
+}
+.image-footer{
+ font-size: 15px;
+ color: #666666;
+ font-weight: bold;
+ text-align: right;
+ padding: 12px 0 12px 0;
+ position: relative;
+
+ }
+
+.image-footer:before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-top-color: #cacaca;
+  position: absolute;
+  right: 7px;
+  top: -4px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .octodex{
+        flex-direction: column;
+    }
+}
